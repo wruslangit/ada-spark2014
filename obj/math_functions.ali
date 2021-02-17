@@ -1,0 +1,35 @@
+V "GNAT Lib v9"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U math_functions%b	math_functions.adb	51aa84e5 NE OO PK
+
+U math_functions%s	math_functions.ads	3b8443ce EE NE OO PK
+
+D math_functions.ads	20210217101515 3b8443ce math_functions%s
+D math_functions.adb	20210217101600 6a2ec72b math_functions%b
+D system.ads		20200312110721 4635ec04 system%s
+X 1 math_functions.ads
+3K9*Math_Functions 14l5 14e19 2|4b14 34l5 34t19
+5A9*Nat_Array(natural)<integer> 10r23 2|24r20
+7V13*Sqrt{float} 7>19 2|9b13 16l8 16t12
+7f19 X{float} 2|9b19 10r25 12r36 13r27
+8V13*Exp{float} 8>18 8>32 2|18b13 22l8 22t11
+8f18 Base{float} 2|18b18
+8f32 Exponent{float} 2|18b32
+10V13*Find{natural} 10>19 10>34 12r16 2|24b10 32l8 32t12
+10a19 A{5A9} 12r35 2|24b16 26r18 27r20
+10i34 E{natural} 2|24b31 27r28
+X 2 math_functions.adb
+6N4 Epsilon 12r41
+10f7 Result{float} 12r18 12r27 13m10 13r31 13r40 15r14
+26i13 I{integer} 27r23 28r24
+

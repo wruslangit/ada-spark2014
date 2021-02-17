@@ -1,0 +1,44 @@
+{
+  "spark": [
+    {
+      "name": "pkg_math_functions.Sqrt",
+      "sloc": [
+        {
+          "file": "pkg_math_functions.ads",
+          "line": 7
+        }
+      ],
+      "spark": "no"
+    },
+    {
+      "name": "pkg_math_functions.Exp",
+      "sloc": [
+        {
+          "file": "pkg_math_functions.ads",
+          "line": 8
+        }
+      ],
+      "spark": "no"
+    },
+    {
+      "name": "pkg_math_functions.Find",
+      "sloc": [
+        {
+          "file": "pkg_math_functions.ads",
+          "line": 10
+        }
+      ],
+      "spark": "no"
+    }
+  ],
+  "flow": [
+  ],
+  "assumptions": [
+  ],
+  "timings": {
+    "globals/properties (advanced)": 3.65000014426187E-04,
+    "flow analysis": 3.99999989895150E-05,
+    "marking": 1.99999994947575E-04,
+    "globals (basic)": 1.90000006114133E-04
+  }
+}

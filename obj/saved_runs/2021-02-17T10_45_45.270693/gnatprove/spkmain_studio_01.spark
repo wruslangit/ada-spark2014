@@ -1,0 +1,52 @@
+{
+  "spark": [
+    {
+      "name": "spkmain_studio_01",
+      "sloc": [
+        {
+          "file": "spkmain_studio_01.adb",
+          "line": 7
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "spkmain_studio_01",
+          "sloc": [
+            {
+              "file": "spkmain_studio_01.adb",
+              "line": 7
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "globals/properties (advanced)": 2.53720004111528E-02,
+    "flow analysis": 2.12100008502603E-03,
+    "marking": 6.77500013262033E-03,
+    "globals (basic)": 1.73390001058578E-01
+  }
+}

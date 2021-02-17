@@ -2,8 +2,10 @@
 b__spkmain_studio_01.o
 [PROJECT FILES]
 /home/wruslan/github/spark-studio-01/spark_studio_01.gpr
-20210217014317
+20210217073023
 [BOUND OBJECT FILES]
+/home/wruslan/github/spark-studio-01/obj/pkg_ada_dtstamp.o
+/home/wruslan/github/spark-studio-01/obj/pkg_math_functions.o
 /home/wruslan/github/spark-studio-01/obj/spkmain_studio_01.o
 [GENERATED SOURCE FILES]
 b__spkmain_studio_01.ads
@@ -15,7 +17,10 @@ b__spkmain_studio_01.ali
 -L/usr/lib/gcc/x86_64-linux-gnu/9/adalib/
 -shared
 -shared-libgcc
+-lgnarl-9
 -lgnat-9
+-lpthread
+-lrt
 -ldl
 [RUN PATH OPTION]
 /usr/lib/gcc/x86_64-linux-gnu/9/adalib/

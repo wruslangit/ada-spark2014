@@ -21,11 +21,6 @@ project spark_studio_01 is
 
    for Main use ("spkmain_studio_01.adb");
    
-   -- ======== for gprbuild ===============================
-   package Builder is
-      for Executable ("spkmain_studio_01.adb") use "spkmain_studio_01.adx";
-   end Builder;
-  
    -- ======== File naming ================================
    package Naming is
       for Spec_Suffix ("ada") use ".ads";
@@ -37,9 +32,9 @@ project spark_studio_01 is
    end Naming;
 
    -- ======== for gprbuild ===============================
-   -- package Builder is
-   --   for Executable ("spkmain_studio_01.adb") use "spkmain_studio_01.adx";
-   -- end Builder;
+   package Builder is
+      for Executable ("spkmain_studio_01.adb") use "spkmain_studio_01.adx";
+   end Builder;
 
    -- ======== for the compiler ===========================
    package Compiler is

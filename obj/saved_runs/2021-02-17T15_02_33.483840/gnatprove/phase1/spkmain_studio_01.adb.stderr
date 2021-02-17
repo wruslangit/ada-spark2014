@@ -1,0 +1,3 @@
+spkmain_studio_01.adb:2:06: file "pkg_show_find.ads" does not contain expected unit
+spkmain_studio_01.adb:2:06: expected unit "pkg_show_find (spec)"
+spkmain_studio_01.adb:2:06: found unit "show_find (spec)"

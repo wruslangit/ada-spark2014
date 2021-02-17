@@ -1,0 +1,7 @@
+20210217111758
+-c
+-x
+ada
+-gnatA
+-gnatc
+-gnates=/home/wruslan/github/spark-studio-01/obj/gnatprove/1e510a52.tmp

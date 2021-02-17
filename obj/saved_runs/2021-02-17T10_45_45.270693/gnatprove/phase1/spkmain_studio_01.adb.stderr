@@ -1,0 +1,1 @@
+spkmain_studio_01.adb:21:28: value may be affected by call to "F" because order of evaluation is arbitrary
