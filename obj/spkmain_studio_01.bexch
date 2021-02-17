@@ -1,0 +1,22 @@
+[GENERATED OBJECT FILE]
+b__spkmain_studio_01.o
+[PROJECT FILES]
+/home/wruslan/github/spark-studio-01/spark_studio_01.gpr
+20210217014317
+[BOUND OBJECT FILES]
+/home/wruslan/github/spark-studio-01/obj/spkmain_studio_01.o
+[GENERATED SOURCE FILES]
+b__spkmain_studio_01.ads
+b__spkmain_studio_01.adb
+b__spkmain_studio_01.ali
+[RESULTING OPTIONS]
+-L/home/wruslan/github/spark-studio-01/obj/
+-L/home/wruslan/github/spark-studio-01/obj/
+-L/usr/lib/gcc/x86_64-linux-gnu/9/adalib/
+-shared
+-shared-libgcc
+-lgnat-9
+-ldl
+[RUN PATH OPTION]
+/usr/lib/gcc/x86_64-linux-gnu/9/adalib/
+/usr/lib
