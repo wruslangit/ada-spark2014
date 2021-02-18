@@ -1,0 +1,31 @@
+{
+  "spark": [
+    {
+      "name": "Increment",
+      "sloc": [
+        {
+          "file": "increment.ads",
+          "line": 1
+        }
+      ],
+      "spark": "no"
+    }
+  ],
+  "flow": [
+  ],
+  "session_map": {
+  },
+  "proof": [
+  ],
+  "assumptions": [
+  ],
+  "timings": {
+    "codepeer results": 3.99999998990097E-06,
+    "init_why_sections": 1.03000004310161E-03,
+    "globals/properties (advanced)": 1.95000000530854E-04,
+    "flow analysis": 9.10000017029233E-05,
+    "marking": 1.59000002895482E-04,
+    "translation of standard": 6.15999987348914E-03,
+    "globals (basic)": 1.82999996468425E-04
+  }
+}

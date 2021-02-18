@@ -1,0 +1,39 @@
+V "GNAT Lib v2020"
+A -x
+A ada
+A -gnatA
+A -gnatc
+P GP FX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U side_effects%b	side_effects.adb	174ed2c0 OO PK
+
+U side_effects%s	side_effects.ads	5f3ba36a OO PK
+
+D side_effects.ads	20210217125517 5f3ba36a side_effects%s
+D side_effects.adb	20210217125653 487571aa side_effects%b
+D system.ads		20200819050647 4635ec04 system%s
+G a Z
+X 1 side_effects.ads
+1K9*Side_Effects 7l5 7e17 2|1b14 14l5 14t17
+3V13*Incr{integer} 3>19 2|3b13
+3i19 X{integer} 2|4r8
+5V13*Incr_And_Log{integer} 5>27 2|8b13 12l8 12t20
+5i27 X{integer} 2|8b27 11r14
+X 2 side_effects.adb
+6i4 Call_Count{natural} 10m7 10r21
+
+QQ SPARKVERSION SPARK Community 2020 (20200818)
+GG EK_DIRECT_CALLS side_effects__incr 0
+GG EK_GLOBALS side_effects__incr local FALSE E_FUNCTION FALSE ORIGIN_FLOW 1 side_effects proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 FALSE TRUE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS side_effects__incr_and_log 0
+GG EK_GLOBALS side_effects__incr_and_log local FALSE E_FUNCTION FALSE ORIGIN_FLOW 1 side_effects proper_proof_in 0 proper_input 1 side_effects__call_count proper_output 1 side_effects__call_count refined_proof_in 0 refined_input 1 side_effects__call_count refined_output 1 side_effects__call_count calls_proof 0 calls 0 calls_conditional 0 FALSE TRUE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 1 side_effects__call_count LOCKS 0
+GG EK_DIRECT_CALLS side_effects 0
+GG EK_GLOBALS side_effects local FALSE E_PACKAGE TRUE ORIGIN_FLOW 0 proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 initializes 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_FLOW_SCOPE side_effects__incr FALSE FALSE FALSE FALSE TRUE side_effects VISIBLE_PART
+GG EK_FLOW_SCOPE side_effects__incr_and_log FALSE FALSE FALSE FALSE TRUE side_effects VISIBLE_PART
+GG EK_FLOW_SCOPE side_effects TRUE FALSE FALSE FALSE FALSE __standard
+GG EK_END_MARKER

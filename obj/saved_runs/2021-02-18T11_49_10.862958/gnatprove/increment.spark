@@ -1,0 +1,80 @@
+{
+  "spark": [
+    {
+      "name": "Increment",
+      "sloc": [
+        {
+          "file": "increment.ads",
+          "line": 1
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+    {
+      "file": "increment.ads",
+      "line": 4,
+      "col": 3,
+      "rule": "GLOBAL_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "Increment",
+        "sloc": [
+          {
+            "file": "increment.ads",
+            "line": 1
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "msg_id": 0,
+      "how_proved": "flow"
+    },
+    {
+      "file": "increment.ads",
+      "line": 5,
+      "col": 3,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "Increment",
+        "sloc": [
+          {
+            "file": "increment.ads",
+            "line": 1
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "msg_id": 1,
+      "how_proved": "flow"
+    }
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Increment",
+          "sloc": [
+            {
+              "file": "increment.ads",
+              "line": 1
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "globals/properties (advanced)": 3.49000009009615E-04,
+    "flow analysis": 1.66299997363240E-03,
+    "marking": 2.93999997666106E-04,
+    "globals (basic)": 4.29000006988645E-04
+  }
+}

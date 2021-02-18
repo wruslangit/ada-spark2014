@@ -1,0 +1,3 @@
+spkmain_studio_01.adb:18:04: info: initialization of "result1" proved[#1]
+spkmain_studio_01.adb:21:04: info: initialization of "result2" proved[#0]
+spkmain_studio_01.adb:24:04: info: initialization of "result3" proved[#2]

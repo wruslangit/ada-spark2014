@@ -1,0 +1,41 @@
+{
+  "spark": [
+    {
+      "name": "Side_Effects.Incr",
+      "sloc": [
+        {
+          "file": "side_effects.ads",
+          "line": 3
+        }
+      ],
+      "spark": "no"
+    },
+    {
+      "name": "Side_Effects.Incr_And_Log",
+      "sloc": [
+        {
+          "file": "side_effects.ads",
+          "line": 5
+        }
+      ],
+      "spark": "no"
+    }
+  ],
+  "flow": [
+  ],
+  "session_map": {
+  },
+  "proof": [
+  ],
+  "assumptions": [
+  ],
+  "timings": {
+    "codepeer results": 3.00000010611257E-06,
+    "init_why_sections": 1.02199998218566E-03,
+    "globals/properties (advanced)": 3.03999986499548E-04,
+    "flow analysis": 3.40000005962793E-05,
+    "marking": 1.86000004759990E-04,
+    "translation of standard": 6.49299984797835E-03,
+    "globals (basic)": 1.95999993593432E-04
+  }
+}

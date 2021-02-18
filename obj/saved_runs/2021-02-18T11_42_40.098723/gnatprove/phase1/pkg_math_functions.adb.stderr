@@ -1,0 +1,2 @@
+pkg_math_functions.adb:5:06: incorrect use of SPARK_Mode
+pkg_math_functions.adb:5:06: no value was set for SPARK_Mode on "pkg_math_functions" at pkg_math_functions.ads:3

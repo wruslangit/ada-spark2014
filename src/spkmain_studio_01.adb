@@ -1,19 +1,24 @@
 with Ada.Text_IO;
 with pkg_ada_dtstamp;
 with pkg_math_functions;
+with increment;
+with side_effects;
 
+-- https://docs.adacore.com/spark2014-docs/html/ug/en/source/how_to_run_gnatprove.html
 -- ========================================================
-procedure spkmain_studio_01 is 
+procedure spkmain_studio_01 
+with SPARK_Mode => on
+is 
 
   -- RENAMING STANDARD PACKAGES FOR CONVENIENCE
    package ATIO    renames Ada.Text_IO;
    package PADTS   renames pkg_ada_dtstamp;
    package PMF     renames pkg_math_functions;
    
-   result1    : float := 0.0;
+   result1    : float;
    base       : float := 10.0;
    exponent   : float := 2.0;
-   result2    : float := 0.0;
+   result2    : float;
    
    the_array : PMF.Nat_array := (2, 3, 4, 5, 6, 7);
    result3   : Natural;

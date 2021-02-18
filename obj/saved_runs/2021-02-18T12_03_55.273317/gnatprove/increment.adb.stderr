@@ -1,0 +1,2 @@
+increment.ads:4:03: info: data dependencies proved[#0]
+increment.ads:5:03: info: flow dependencies proved[#1]

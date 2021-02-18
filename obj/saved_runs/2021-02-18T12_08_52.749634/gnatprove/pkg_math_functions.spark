@@ -1,0 +1,102 @@
+{
+  "spark": [
+    {
+      "name": "pkg_math_functions",
+      "sloc": [
+        {
+          "file": "pkg_math_functions.ads",
+          "line": 3
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "pkg_math_functions.Sqrt",
+      "sloc": [
+        {
+          "file": "pkg_math_functions.ads",
+          "line": 9
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "pkg_math_functions.Exp",
+      "sloc": [
+        {
+          "file": "pkg_math_functions.ads",
+          "line": 10
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "pkg_math_functions.Find",
+      "sloc": [
+        {
+          "file": "pkg_math_functions.ads",
+          "line": 12
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "pkg_math_functions.Exp",
+          "sloc": [
+            {
+              "file": "pkg_math_functions.ads",
+              "line": 10
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "pkg_math_functions.Find",
+          "sloc": [
+            {
+              "file": "pkg_math_functions.ads",
+              "line": 12
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "pkg_math_functions.Sqrt",
+          "sloc": [
+            {
+              "file": "pkg_math_functions.ads",
+              "line": 9
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "globals/properties (advanced)": 3.50999995134771E-04,
+    "flow analysis": 2.54100002348423E-03,
+    "marking": 2.70999997155741E-04,
+    "globals (basic)": 2.34999999520369E-04
+  }
+}

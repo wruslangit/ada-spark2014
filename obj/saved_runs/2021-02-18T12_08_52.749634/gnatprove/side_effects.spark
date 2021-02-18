@@ -1,0 +1,76 @@
+{
+  "spark": [
+    {
+      "name": "Side_Effects",
+      "sloc": [
+        {
+          "file": "side_effects.ads",
+          "line": 1
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Side_Effects.Incr",
+      "sloc": [
+        {
+          "file": "side_effects.ads",
+          "line": 5
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Side_Effects.Incr_And_Log",
+      "sloc": [
+        {
+          "file": "side_effects.ads",
+          "line": 7
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Side_Effects.Incr_And_Log",
+          "sloc": [
+            {
+              "file": "side_effects.ads",
+              "line": 7
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Side_Effects.Incr",
+          "sloc": [
+            {
+              "file": "side_effects.ads",
+              "line": 5
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "globals/properties (advanced)": 3.19000013405457E-04,
+    "flow analysis": 1.48500001523644E-03,
+    "marking": 2.05999996978790E-04,
+    "globals (basic)": 1.99000001884997E-04
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "spark": [
+    {
+      "name": "spkmain_studio_01",
+      "sloc": [
+        {
+          "file": "spkmain_studio_01.adb",
+          "line": 9
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+    {
+      "file": "spkmain_studio_01.adb",
+      "line": 21,
+      "col": 4,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "spkmain_studio_01",
+        "sloc": [
+          {
+            "file": "spkmain_studio_01.adb",
+            "line": 9
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "msg_id": 0,
+      "how_proved": "flow"
+    },
+    {
+      "file": "spkmain_studio_01.adb",
+      "line": 18,
+      "col": 4,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "spkmain_studio_01",
+        "sloc": [
+          {
+            "file": "spkmain_studio_01.adb",
+            "line": 9
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "msg_id": 1,
+      "how_proved": "flow"
+    },
+    {
+      "file": "spkmain_studio_01.adb",
+      "line": 24,
+      "col": 4,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "spkmain_studio_01",
+        "sloc": [
+          {
+            "file": "spkmain_studio_01.adb",
+            "line": 9
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "msg_id": 2,
+      "how_proved": "flow"
+    }
+  ],
+  "assumptions": [
+  ],
+  "timings": {
+    "globals/properties (advanced)": 1.26560004428029E-02,
+    "flow analysis": 1.93599995691329E-03,
+    "marking": 1.41120003536344E-02,
+    "globals (basic)": 6.96599995717406E-03
+  }
+}

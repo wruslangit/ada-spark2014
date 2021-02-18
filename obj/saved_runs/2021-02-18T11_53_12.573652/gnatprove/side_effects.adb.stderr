@@ -1,0 +1,1 @@
+side_effects.ads:7:13: function with output global "Call_Count" is not allowed in SPARK[#0]

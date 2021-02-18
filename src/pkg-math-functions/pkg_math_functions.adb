@@ -1,7 +1,9 @@
 --  file: math_functions.adb
 --  http://www.cs.fsu.edu/~baker/ada/examples/
 
-package body pkg_math_functions is
+package body pkg_math_functions
+with SPARK_Mode => on
+is
 
    Epsilon : constant := 1.0e-6;
 
@@ -17,8 +19,10 @@ package body pkg_math_functions is
 -- =======================================================
    function Exp (Base : Float; Exponent : Float) return Float is
    begin
+      -- Base := 10.0;
+      -- Exponent := 2.0;
       --  need implementation code here
-      return 1.0;
+      return (Base * Exponent);
    end Exp;
 
 -- ======================================================

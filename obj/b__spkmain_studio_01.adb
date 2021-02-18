@@ -27,18 +27,20 @@ package body ada_main is
    E112 : Short_Integer; pragma Import (Ada, E112, "system__finalization_root_E");
    E110 : Short_Integer; pragma Import (Ada, E110, "ada__finalization_E");
    E109 : Short_Integer; pragma Import (Ada, E109, "system__file_io_E");
-   E190 : Short_Integer; pragma Import (Ada, E190, "system__storage_pools_E");
-   E186 : Short_Integer; pragma Import (Ada, E186, "system__finalization_masters_E");
-   E184 : Short_Integer; pragma Import (Ada, E184, "system__storage_pools__subpools_E");
-   E182 : Short_Integer; pragma Import (Ada, E182, "ada__strings__unbounded_E");
-   E154 : Short_Integer; pragma Import (Ada, E154, "system__task_info_E");
-   E148 : Short_Integer; pragma Import (Ada, E148, "system__task_primitives__operations_E");
-   E117 : Short_Integer; pragma Import (Ada, E117, "ada__calendar_E");
-   E123 : Short_Integer; pragma Import (Ada, E123, "ada__calendar__time_zones_E");
-   E139 : Short_Integer; pragma Import (Ada, E139, "ada__real_time_E");
+   E192 : Short_Integer; pragma Import (Ada, E192, "system__storage_pools_E");
+   E188 : Short_Integer; pragma Import (Ada, E188, "system__finalization_masters_E");
+   E186 : Short_Integer; pragma Import (Ada, E186, "system__storage_pools__subpools_E");
+   E184 : Short_Integer; pragma Import (Ada, E184, "ada__strings__unbounded_E");
+   E156 : Short_Integer; pragma Import (Ada, E156, "system__task_info_E");
+   E150 : Short_Integer; pragma Import (Ada, E150, "system__task_primitives__operations_E");
+   E119 : Short_Integer; pragma Import (Ada, E119, "ada__calendar_E");
+   E125 : Short_Integer; pragma Import (Ada, E125, "ada__calendar__time_zones_E");
+   E141 : Short_Integer; pragma Import (Ada, E141, "ada__real_time_E");
    E006 : Short_Integer; pragma Import (Ada, E006, "ada__text_io_E");
-   E115 : Short_Integer; pragma Import (Ada, E115, "pkg_ada_dtstamp_E");
-   E204 : Short_Integer; pragma Import (Ada, E204, "pkg_math_functions_E");
+   E115 : Short_Integer; pragma Import (Ada, E115, "increment_E");
+   E117 : Short_Integer; pragma Import (Ada, E117, "pkg_ada_dtstamp_E");
+   E206 : Short_Integer; pragma Import (Ada, E206, "pkg_math_functions_E");
+   E208 : Short_Integer; pragma Import (Ada, E208, "side_effects_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -56,21 +58,21 @@ package body ada_main is
       begin
          F1;
       end;
-      E182 := E182 - 1;
+      E184 := E184 - 1;
       declare
          procedure F2;
          pragma Import (Ada, F2, "ada__strings__unbounded__finalize_spec");
       begin
          F2;
       end;
-      E184 := E184 - 1;
+      E186 := E186 - 1;
       declare
          procedure F3;
          pragma Import (Ada, F3, "system__storage_pools__subpools__finalize_spec");
       begin
          F3;
       end;
-      E186 := E186 - 1;
+      E188 := E188 - 1;
       declare
          procedure F4;
          pragma Import (Ada, F4, "system__finalization_masters__finalize_spec");
@@ -229,32 +231,34 @@ package body ada_main is
       System.File_Io'Elab_Body;
       E109 := E109 + 1;
       System.Storage_Pools'Elab_Spec;
-      E190 := E190 + 1;
+      E192 := E192 + 1;
       System.Finalization_Masters'Elab_Spec;
       System.Finalization_Masters'Elab_Body;
-      E186 := E186 + 1;
+      E188 := E188 + 1;
       System.Storage_Pools.Subpools'Elab_Spec;
-      E184 := E184 + 1;
+      E186 := E186 + 1;
       Ada.Strings.Unbounded'Elab_Spec;
-      E182 := E182 + 1;
+      E184 := E184 + 1;
       System.Task_Info'Elab_Spec;
-      E154 := E154 + 1;
+      E156 := E156 + 1;
       System.Task_Primitives.Operations'Elab_Body;
-      E148 := E148 + 1;
+      E150 := E150 + 1;
       Ada.Calendar'Elab_Spec;
       Ada.Calendar'Elab_Body;
-      E117 := E117 + 1;
+      E119 := E119 + 1;
       Ada.Calendar.Time_Zones'Elab_Spec;
-      E123 := E123 + 1;
+      E125 := E125 + 1;
       Ada.Real_Time'Elab_Spec;
       Ada.Real_Time'Elab_Body;
-      E139 := E139 + 1;
+      E141 := E141 + 1;
       Ada.Text_Io'Elab_Spec;
       Ada.Text_Io'Elab_Body;
       E006 := E006 + 1;
-      pkg_ada_dtstamp'elab_body;
       E115 := E115 + 1;
-      E204 := E204 + 1;
+      pkg_ada_dtstamp'elab_body;
+      E117 := E117 + 1;
+      E206 := E206 + 1;
+      E208 := E208 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
@@ -290,8 +294,10 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
+   --   /home/wruslan/github/spark-studio-01/obj/increment.o
    --   /home/wruslan/github/spark-studio-01/obj/pkg_ada_dtstamp.o
    --   /home/wruslan/github/spark-studio-01/obj/pkg_math_functions.o
+   --   /home/wruslan/github/spark-studio-01/obj/side_effects.o
    --   /home/wruslan/github/spark-studio-01/obj/spkmain_studio_01.o
    --   -L/home/wruslan/github/spark-studio-01/obj/
    --   -L/home/wruslan/github/spark-studio-01/obj/

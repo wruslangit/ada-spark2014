@@ -1,0 +1,31 @@
+{
+  "spark": [
+    {
+      "name": "spkmain_studio_01",
+      "sloc": [
+        {
+          "file": "spkmain_studio_01.adb",
+          "line": 8
+        }
+      ],
+      "spark": "no"
+    }
+  ],
+  "flow": [
+  ],
+  "session_map": {
+  },
+  "proof": [
+  ],
+  "assumptions": [
+  ],
+  "timings": {
+    "codepeer results": 3.00000010611257E-06,
+    "init_why_sections": 3.18000005790964E-04,
+    "globals/properties (advanced)": 1.27229997888207E-02,
+    "flow analysis": 9.10000017029233E-05,
+    "marking": 1.37759996578097E-02,
+    "translation of standard": 5.41849993169308E-02,
+    "globals (basic)": 7.12299998849630E-03
+  }
+}

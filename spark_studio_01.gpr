@@ -11,6 +11,9 @@
 
 -- ========================================================
 project spark_studio_01 is
+
+   Mode := External ("GPR_TOOL", "");
+
    -- for Languages   use ("Ada", "C", "C++");
    -- for Languages   use ("Ada", "C");
    for Languages use ("Ada");
@@ -38,6 +41,7 @@ project spark_studio_01 is
 
    -- ======== for the compiler ===========================
    package Compiler is
+        
       -- for Default_Switches ("ada") use ("-c", "-gnat2012", "-gnat12");
       -- for Default_Switches ("C")   use ("-O2", "-o");
       -- for Default_Switches ("C++") use ("-O2", "-o");

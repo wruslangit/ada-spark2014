@@ -1,0 +1,47 @@
+Summary of SPARK analysis
+=========================
+
+-------------------------------------------------------------------------------------------
+SPARK Analysis results        Total        Flow   CodePeer   Provers   Justified   Unproved
+-------------------------------------------------------------------------------------------
+Data Dependencies                 .           .          .         .           .          .
+Flow Dependencies                 .           .          .         .           .          .
+Initialization                    1           1          .         .           .          .
+Non-Aliasing                      .           .          .         .           .          .
+Run-time Checks                   .           .          .         .           .          .
+Assertions                        .           .          .         .           .          .
+Functional Contracts              .           .          .         .           .          .
+LSP Verification                  .           .          .         .           .          .
+Termination                       .           .          .         .           .          .
+Concurrency                       .           .          .         .           .          .
+-------------------------------------------------------------------------------------------
+Total                             1    1 (100%)          .         .           .          .
+
+
+max steps used for successful proof: 0
+
+Analyzed 5 units
+in unit increment, 0 subprograms and packages out of 1 analyzed
+  Increment at increment.ads:1 skipped
+in unit pkg_ada_dtstamp, 0 subprograms and packages out of 12 analyzed
+  pkg_ada_dtstamp.GetTime at pkg_ada_dtstamp.adb:59 skipped
+  pkg_ada_dtstamp.RTdelay_msec at pkg_ada_dtstamp.ads:19 skipped
+  pkg_ada_dtstamp.RTdelay_nsec at pkg_ada_dtstamp.ads:21 skipped
+  pkg_ada_dtstamp.RTdelay_sec at pkg_ada_dtstamp.ads:18 skipped
+  pkg_ada_dtstamp.RTdelay_usec at pkg_ada_dtstamp.ads:20 skipped
+  pkg_ada_dtstamp.dtstamp at pkg_ada_dtstamp.ads:14 skipped
+  pkg_ada_dtstamp.get_datestamp at pkg_ada_dtstamp.ads:15 skipped
+  pkg_ada_dtstamp.get_timestamp at pkg_ada_dtstamp.ads:16 skipped
+  pkg_ada_dtstamp.looptest10_RTdelay_msec at pkg_ada_dtstamp.ads:24 skipped
+  pkg_ada_dtstamp.looptest10_RTdelay_nsec at pkg_ada_dtstamp.ads:26 skipped
+  pkg_ada_dtstamp.looptest10_RTdelay_sec at pkg_ada_dtstamp.ads:23 skipped
+  pkg_ada_dtstamp.looptest10_RTdelay_usec at pkg_ada_dtstamp.ads:25 skipped
+in unit pkg_math_functions, 0 subprograms and packages out of 3 analyzed
+  pkg_math_functions.Exp at pkg_math_functions.ads:8 skipped
+  pkg_math_functions.Find at pkg_math_functions.ads:10 skipped
+  pkg_math_functions.Sqrt at pkg_math_functions.ads:7 skipped
+in unit side_effects, 0 subprograms and packages out of 2 analyzed
+  Side_Effects.Incr at side_effects.ads:3 skipped
+  Side_Effects.Incr_And_Log at side_effects.ads:5 skipped
+in unit spkmain_studio_01, 1 subprograms and packages out of 1 analyzed
+  spkmain_studio_01 at spkmain_studio_01.adb:9 flow analyzed (0 errors, 0 checks and 2 warnings)

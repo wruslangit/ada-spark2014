@@ -2,10 +2,12 @@
 b__spkmain_studio_01.o
 [PROJECT FILES]
 /home/wruslan/github/spark-studio-01/spark_studio_01.gpr
-20210217073023
+20210218034534
 [BOUND OBJECT FILES]
+/home/wruslan/github/spark-studio-01/obj/increment.o
 /home/wruslan/github/spark-studio-01/obj/pkg_ada_dtstamp.o
 /home/wruslan/github/spark-studio-01/obj/pkg_math_functions.o
+/home/wruslan/github/spark-studio-01/obj/side_effects.o
 /home/wruslan/github/spark-studio-01/obj/spkmain_studio_01.o
 [GENERATED SOURCE FILES]
 b__spkmain_studio_01.ads

@@ -1,4 +1,4 @@
-'2021-02-17T19:17:59.125257':
+'2021-02-18T09:39:38.851757':
   category: GNATprove
   files:
   - /home/wruslan/github/spark-studio-01/obj/gnatprove
@@ -13,8 +13,8 @@
 
     '
   output_parser: GNATprove_Parser
-  timestamp: '2021-02-17T19:17:59.125257'
-'2021-02-17T19:19:40.594111':
+  timestamp: '2021-02-18T09:39:38.851757'
+'2021-02-18T09:40:41.654463':
   category: GNATprove
   files:
   - /home/wruslan/github/spark-studio-01/obj/gnatprove
@@ -29,4 +29,434 @@
 
     '
   output_parser: GNATprove_Parser
-  timestamp: '2021-02-17T19:19:40.594111'
+  timestamp: '2021-02-18T09:40:41.654463'
+'2021-02-18T11:21:57.245473':
+  category: GNATprove
+  files:
+  - /home/wruslan/github/spark-studio-01/obj/gnatprove
+  label: Basic Prove All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    gnat2why: invalid switch: -U
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-02-18T11:21:57.245473'
+'2021-02-18T11:22:28.818080':
+  category: GNATprove
+  files:
+  - /home/wruslan/github/spark-studio-01/obj/gnatprove
+  label: Basic Prove All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    gnat2why: invalid switch: -j0
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-02-18T11:22:28.818080'
+'2021-02-18T11:23:11.491143':
+  category: GNATprove
+  files:
+  - /home/wruslan/github/spark-studio-01/obj/gnatprove
+  label: Basic Prove All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    gnat2why: invalid switch: --mode=flow
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-02-18T11:23:11.491143'
+'2021-02-18T11:23:46.628938':
+  category: GNATprove
+  files:
+  - /home/wruslan/github/spark-studio-01/obj/gnatprove
+  label: Basic Prove All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    warning: no bodies have been analyzed by GNATprove
+
+    enable analysis of a non-generic body using SPARK_Mode
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-02-18T11:23:46.628938'
+'2021-02-18T11:26:50.448996':
+  category: GNATprove
+  files:
+  - /home/wruslan/github/spark-studio-01/obj/gnatprove
+  label: Basic Prove All Sources
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: full checking of SPARK legality rules ...
+
+    warning: no bodies have been analyzed by GNATprove
+
+    enable analysis of a non-generic body using SPARK_Mode
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-02-18T11:26:50.448996'
+'2021-02-18T11:29:01.030085':
+  category: GNATprove
+  files:
+  - /home/wruslan/github/spark-studio-01/obj/gnatprove
+  label: Basic Prove All Sources
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: full checking of SPARK legality rules ...
+
+    warning: no bodies have been analyzed by GNATprove
+
+    enable analysis of a non-generic body using SPARK_Mode
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-02-18T11:29:01.030085'
+'2021-02-18T11:37:14.123956':
+  category: GNATprove
+  files:
+  - /home/wruslan/github/spark-studio-01/obj/gnatprove
+  label: Examine All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    warning: no bodies have been analyzed by GNATprove
+
+    enable analysis of a non-generic body using SPARK_Mode
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-02-18T11:37:14.123956'
+'2021-02-18T11:40:42.814839':
+  category: GNATprove
+  files:
+  - /home/wruslan/github/spark-studio-01/obj/gnatprove
+  label: Examine All Sources
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    spkmain_studio_01.adb:18:04: warning: initialization of "result1" has no effect[#0]
+
+    spkmain_studio_01.adb:21:04: warning: initialization of "result2" has no effect[#1]
+
+    Summary logged in /home/wruslan/github/spark-studio-01/obj/gnatprove/gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-02-18T11:40:42.814839'
+'2021-02-18T11:41:30.832532':
+  category: GNATprove
+  files:
+  - /home/wruslan/github/spark-studio-01/obj/gnatprove
+  label: Examine All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    spkmain_studio_01.adb:18:04: warning: initialization of "result1" has no effect[#0]
+
+    spkmain_studio_01.adb:21:04: warning: initialization of "result2" has no effect[#1]
+
+    spkmain_studio_01.adb:24:04: info: initialization of "result3" proved[#2]
+
+    Summary logged in /home/wruslan/github/spark-studio-01/obj/gnatprove/gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-02-18T11:41:30.832532'
+'2021-02-18T11:42:40.098723':
+  category: GNATprove
+  files:
+  - /home/wruslan/github/spark-studio-01/obj/gnatprove
+  label: Examine All Sources
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    pkg_math_functions.adb:5:06: incorrect use of SPARK_Mode
+
+    pkg_math_functions.adb:5:06: no value was set for SPARK_Mode on "pkg_math_functions"
+    at pkg_math_functions.ads:3
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-02-18T11:42:40.098723'
+'2021-02-18T11:43:55.126168':
+  category: GNATprove
+  files:
+  - /home/wruslan/github/spark-studio-01/obj/gnatprove
+  label: Examine All Sources
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    pkg_math_functions.ads:10:18: warning: unused variable "Base"[#0]
+
+    pkg_math_functions.ads:10:32: warning: unused variable "Exponent"[#1]
+
+    spkmain_studio_01.adb:18:04: warning: initialization of "result1" has no effect[#0]
+
+    spkmain_studio_01.adb:21:04: warning: initialization of "result2" has no effect[#1]
+
+    spkmain_studio_01.adb:24:04: info: initialization of "result3" proved[#2]
+
+    Summary logged in /home/wruslan/github/spark-studio-01/obj/gnatprove/gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-02-18T11:43:55.126168'
+'2021-02-18T11:46:40.174954':
+  category: GNATprove
+  files:
+  - /home/wruslan/github/spark-studio-01/obj/gnatprove
+  label: Examine All Sources
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    pkg_math_functions.ads:10:18: warning: unused variable "Base"[#0]
+
+    pkg_math_functions.ads:10:32: warning: unused variable "Exponent"[#1]
+
+    spkmain_studio_01.adb:18:04: warning: initialization of "result1" has no effect[#0]
+
+    spkmain_studio_01.adb:21:04: warning: initialization of "result2" has no effect[#1]
+
+    spkmain_studio_01.adb:24:04: info: initialization of "result3" proved[#2]
+
+    Summary logged in /home/wruslan/github/spark-studio-01/obj/gnatprove/gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-02-18T11:46:40.174954'
+'2021-02-18T11:49:10.862958':
+  category: GNATprove
+  files:
+  - /home/wruslan/github/spark-studio-01/obj/gnatprove
+  label: Examine All Sources
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    pkg_math_functions.ads:10:18: warning: unused variable "Base"[#0]
+
+    pkg_math_functions.ads:10:32: warning: unused variable "Exponent"[#1]
+
+    increment.ads:4:03: info: data dependencies proved[#0]
+
+    increment.ads:5:03: info: flow dependencies proved[#1]
+
+    spkmain_studio_01.adb:18:04: warning: initialization of "result1" has no effect[#0]
+
+    spkmain_studio_01.adb:21:04: warning: initialization of "result2" has no effect[#1]
+
+    spkmain_studio_01.adb:24:04: info: initialization of "result3" proved[#2]
+
+    Summary logged in /home/wruslan/github/spark-studio-01/obj/gnatprove/gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-02-18T11:49:10.862958'
+'2021-02-18T11:53:12.573652':
+  category: GNATprove
+  files:
+  - /home/wruslan/github/spark-studio-01/obj/gnatprove
+  label: Examine All Sources
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    pkg_math_functions.ads:10:18: warning: unused variable "Base"[#0]
+
+    pkg_math_functions.ads:10:32: warning: unused variable "Exponent"[#1]
+
+    increment.ads:4:03: info: data dependencies proved[#0]
+
+    increment.ads:5:03: info: flow dependencies proved[#1]
+
+    side_effects.ads:7:13: function with output global "Call_Count" is not allowed
+    in SPARK[#0]
+
+    spkmain_studio_01.adb:18:04: warning: initialization of "result1" has no effect[#0]
+
+    spkmain_studio_01.adb:21:04: warning: initialization of "result2" has no effect[#1]
+
+    spkmain_studio_01.adb:24:04: info: initialization of "result3" proved[#2]
+
+    gnatprove: error during analysis of data and information flow
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-02-18T11:53:12.573652'
+'2021-02-18T11:55:48.490589':
+  category: GNATprove
+  files:
+  - /home/wruslan/github/spark-studio-01/obj/gnatprove
+  label: Examine Subprogram
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    Summary logged in /home/wruslan/github/spark-studio-01/obj/gnatprove/gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-02-18T11:55:48.490589'
+'2021-02-18T11:59:00.254726':
+  category: GNATprove
+  files:
+  - /home/wruslan/github/spark-studio-01/obj/gnatprove
+  label: Examine All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    spkmain_studio_01.adb:18:04: warning: initialization of "result1" has no effect[#0]
+
+    spkmain_studio_01.adb:21:04: warning: initialization of "result2" has no effect[#1]
+
+    spkmain_studio_01.adb:24:04: info: initialization of "result3" proved[#2]
+
+    increment.ads:4:03: info: data dependencies proved[#0]
+
+    increment.ads:5:03: info: flow dependencies proved[#1]
+
+    side_effects.ads:7:13: function with output global "Call_Count" is not allowed
+    in SPARK[#0]
+
+    gnatprove: error during analysis of data and information flow
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-02-18T11:59:00.254726'
+'2021-02-18T12:02:16.131932':
+  category: GNATprove
+  files:
+  - /home/wruslan/github/spark-studio-01/obj/gnatprove
+  label: Examine All Sources
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    increment.ads:4:03: info: data dependencies proved[#0]
+
+    increment.ads:5:03: info: flow dependencies proved[#1]
+
+    side_effects.ads:7:13: function with output global "Call_Count" is not allowed
+    in SPARK[#0]
+
+    spkmain_studio_01.adb:18:04: info: initialization of "result1" proved[#1]
+
+    spkmain_studio_01.adb:21:04: info: initialization of "result2" proved[#0]
+
+    spkmain_studio_01.adb:24:04: info: initialization of "result3" proved[#2]
+
+    gnatprove: error during analysis of data and information flow
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-02-18T12:02:16.131932'
+'2021-02-18T12:03:55.273317':
+  category: GNATprove
+  files:
+  - /home/wruslan/github/spark-studio-01/obj/gnatprove
+  label: Examine All Sources
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    increment.ads:4:03: info: data dependencies proved[#0]
+
+    increment.ads:5:03: info: flow dependencies proved[#1]
+
+    spkmain_studio_01.adb:18:04: info: initialization of "result1" proved[#1]
+
+    spkmain_studio_01.adb:21:04: info: initialization of "result2" proved[#0]
+
+    spkmain_studio_01.adb:24:04: info: initialization of "result3" proved[#2]
+
+    Summary logged in /home/wruslan/github/spark-studio-01/obj/gnatprove/gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-02-18T12:03:55.273317'
+'2021-02-18T12:08:52.749634':
+  category: GNATprove
+  files:
+  - /home/wruslan/github/spark-studio-01/obj/gnatprove
+  label: Basic Prove All Sources
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: full checking of SPARK legality rules ...
+
+    Summary logged in /home/wruslan/github/spark-studio-01/obj/gnatprove/gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-02-18T12:08:52.749634'
+'2021-02-18T12:13:18.578886':
+  category: GNATprove
+  files:
+  - /home/wruslan/github/spark-studio-01/obj/gnatprove
+  label: Basic Prove All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    spkmain_studio_01.adb:18:04: info: initialization of "result1" proved[#1]
+
+    spkmain_studio_01.adb:21:04: info: initialization of "result2" proved[#0]
+
+    spkmain_studio_01.adb:24:04: info: initialization of "result3" proved[#2]
+
+    spkmain_studio_01.adb:32:31: info: range check proved[#3]
+
+    spkmain_studio_01.adb:35:31: info: range check proved[#4]
+
+    spkmain_studio_01.adb:38:31: info: range check proved[#5]
+
+    increment.adb:5:10: info: overflow check proved[#2]
+
+    increment.ads:4:03: info: data dependencies proved[#0]
+
+    increment.ads:5:03: info: flow dependencies proved[#1]
+
+    increment.ads:7:14: info: postcondition proved[#4]
+
+    increment.ads:7:24: info: overflow check proved[#3]
+
+    side_effects.adb:6:10: medium: overflow check might fail (e.g. when X = Integer''Last)
+    [possible explanation: subprogram at side_effects.ads:5 should mention X in a
+    precondition][#1]
+
+    side_effects.adb:13:16: medium: overflow check might fail (e.g. when X = Integer''Last)
+    [possible explanation: subprogram at side_effects.ads:7 should mention X in a
+    precondition][#0]
+
+    pkg_math_functions.adb:12:27: info: float overflow check proved[#0]
+
+    pkg_math_functions.adb:12:27: info: division check proved[#1]
+
+    pkg_math_functions.adb:25:20: medium: float overflow check might fail (e.g. when
+    Base = 3.3752146E+38 and Exponent = 1.9359426E+0) [possible explanation: subprogram
+    at pkg_math_functions.ads:10 should mention Base and Exponent in a precondition][#4]
+
+    pkg_math_functions.adb:33:24: info: range check proved[#2]
+
+    pkg_math_functions.ads:14:16: info: postcondition proved[#3]
+
+    Summary logged in /home/wruslan/github/spark-studio-01/obj/gnatprove/gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-02-18T12:13:18.578886'

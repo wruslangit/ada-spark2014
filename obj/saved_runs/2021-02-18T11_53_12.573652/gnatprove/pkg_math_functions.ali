@@ -1,0 +1,51 @@
+V "GNAT Lib v2020"
+A -x
+A ada
+A -gnatA
+A -gnatc
+P GP FX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U pkg_math_functions%b	pkg_math_functions.adb	9725bcac OO PK IL
+
+U pkg_math_functions%s	pkg_math_functions.ads	00c2cf07 OO PK IL
+
+D pkg_math_functions.ads  20210218034336 00c2cf07 pkg_math_functions%s
+D pkg_math_functions.adb  20210218034631 97e773ab pkg_math_functions%b
+D system.ads		20200819050647 4635ec04 system%s
+G a Z
+X 1 pkg_math_functions.ads
+3K9*pkg_math_functions 16l5 16e23 2|4b14 40l5 40t23
+7A9*Nat_Array(natural)<integer> 12r23 2|29r20
+9V13*Sqrt{float} 9>19 2|11b13 18l8 18t12
+9f19 X{float} 2|11b19 12r25
+10V13*Exp{float} 10>18 10>32 2|20b13 26l8 26t11
+10f18 Base{float} 2|20b18
+10f32 Exponent{float} 2|20b32
+12V13*Find{natural} 12>19 12>34 14r16 2|29b10 37l5 37t9
+12a19 A{7A9} 14r35 2|29b16 31r18 32r20
+12i34 E{natural} 2|29b31 32r28
+X 2 pkg_math_functions.adb
+8N4 Epsilon
+12f7 Result{float} 17r14
+31i13 I{integer} 32r23 33r24
+
+QQ SPARKVERSION SPARK Community 2020 (20200818)
+GG EK_DIRECT_CALLS pkg_math_functions__sqrt 0
+GG EK_GLOBALS pkg_math_functions__sqrt local FALSE E_FUNCTION FALSE ORIGIN_FLOW 1 pkg_math_functions proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS pkg_math_functions__exp 0
+GG EK_GLOBALS pkg_math_functions__exp local FALSE E_FUNCTION FALSE ORIGIN_FLOW 1 pkg_math_functions proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS pkg_math_functions__find 0
+GG EK_GLOBALS pkg_math_functions__find local FALSE E_FUNCTION FALSE ORIGIN_FLOW 1 pkg_math_functions proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS pkg_math_functions 0
+GG EK_GLOBALS pkg_math_functions local FALSE E_PACKAGE TRUE ORIGIN_FLOW 0 proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 initializes 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_FLOW_SCOPE pkg_math_functions__find FALSE FALSE FALSE FALSE TRUE pkg_math_functions VISIBLE_PART
+GG EK_FLOW_SCOPE pkg_math_functions__sqrt FALSE FALSE FALSE FALSE TRUE pkg_math_functions VISIBLE_PART
+GG EK_FLOW_SCOPE pkg_math_functions__exp FALSE FALSE FALSE FALSE TRUE pkg_math_functions VISIBLE_PART
+GG EK_FLOW_SCOPE pkg_math_functions TRUE FALSE FALSE FALSE FALSE __standard
+GG EK_END_MARKER

@@ -1,0 +1,3 @@
+spkmain_studio_01.adb:18:04: warning: initialization of "result1" has no effect[#0]
+spkmain_studio_01.adb:21:04: warning: initialization of "result2" has no effect[#1]
+spkmain_studio_01.adb:24:04: info: initialization of "result3" proved[#2]

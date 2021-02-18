@@ -1,0 +1,25 @@
+V "GNAT Lib v9"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U side_effects%b	side_effects.adb	fb006fb6 NE OO PK
+
+U side_effects%s	side_effects.ads	146c6007 EE NE OO PK
+
+D side_effects.ads	20210218035130 146c6007 side_effects%s
+D side_effects.adb	20210218035100 ef6c0fb1 side_effects%b
+D system.ads		20200312110721 4635ec04 system%s
+X 1 side_effects.ads
+1K9*Side_Effects 9l5 9e17 2|1b14 16l5 16t17
+5V13*Incr{integer} 5>19 2|5b13
+5i19 X{integer} 2|6r8
+7V13*Incr_And_Log{integer} 7>27 2|10b13 14l8 14t20
+7i27 X{integer} 2|10b27 13r14
+X 2 side_effects.adb
+8i4 Call_Count{natural} 12m7 12r21
+

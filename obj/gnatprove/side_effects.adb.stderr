@@ -1,0 +1,2 @@
+side_effects.adb:6:10: medium: overflow check might fail (e.g. when X = Integer'Last) [possible explanation: subprogram at side_effects.ads:5 should mention X in a precondition][#1]
+side_effects.adb:13:16: medium: overflow check might fail (e.g. when X = Integer'Last) [possible explanation: subprogram at side_effects.ads:7 should mention X in a precondition][#0]

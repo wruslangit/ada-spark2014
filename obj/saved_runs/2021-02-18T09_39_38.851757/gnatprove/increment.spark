@@ -1,0 +1,24 @@
+{
+  "spark": [
+    {
+      "name": "Increment",
+      "sloc": [
+        {
+          "file": "increment.ads",
+          "line": 1
+        }
+      ],
+      "spark": "no"
+    }
+  ],
+  "flow": [
+  ],
+  "assumptions": [
+  ],
+  "timings": {
+    "globals/properties (advanced)": 2.54999991739169E-04,
+    "flow analysis": 1.16000002890360E-04,
+    "marking": 2.13000006624497E-04,
+    "globals (basic)": 2.22999995457940E-04
+  }
+}

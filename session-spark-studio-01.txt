@@ -1,0 +1,230 @@
+File: session-spark-studio-01.txt
+
+gprbuild -d -P/home/wruslan/github/spark-studio-01/spark_studio_01.gpr -s -k
+Compile
+   [Ada]          spkmain_studio_01.adb
+   [Ada]          increment.adb
+   [Ada]          pkg_ada_dtstamp.adb
+   [Ada]          pkg_math_functions.adb
+   [Ada]          side_effects.adb
+Bind
+   [gprbind]      spkmain_studio_01.bexch
+   [Ada]          spkmain_studio_01.ali
+Link
+   [link]         spkmain_studio_01.adb
+[2021-02-18 11:48:37] process terminated successfully, elapsed time: 01.27s
+
+gprbuild -d -P/home/wruslan/github/spark-studio-01/spark_studio_01.gpr -s -k
+Compile
+   [Ada]          spkmain_studio_01.adb
+   [Ada]          increment.adb
+   [Ada]          pkg_ada_dtstamp.adb
+   [Ada]          pkg_math_functions.adb
+   [Ada]          side_effects.adb
+Bind
+   [gprbind]      spkmain_studio_01.bexch
+   [Ada]          spkmain_studio_01.ali
+Link
+   [link]         spkmain_studio_01.adb
+[2021-02-18 11:51:55] process terminated successfully, elapsed time: 01.27s
+
+/home/wruslan/github/spark-studio-01/exec/spkmain_studio_01.adx
+2021-02-18 03:52:34.33405375954 Bismillah 3 times WRY
+Running inside GNAT Studio Community
+result1 =  1.24000E+01
+result2 =  1.00000E+00
+result3 =  3
+2021-02-18 03:52:34.33405424985 Alhamdulillah 3 times WRY
+[2021-02-18 11:52:34] process terminated successfully, elapsed time: 00.19s
+
+gnatprove -P/home/wruslan/github/spark-studio-01/spark_studio_01.gpr -j0 --mode=flow --ide-progress-bar -U --report=all
+Phase 1 of 2: generation of Global contracts ...
+Phase 2 of 2: analysis of data and information flow ...
+pkg_math_functions.ads:10:18: warning: unused variable "Base"[#0]
+pkg_math_functions.ads:10:32: warning: unused variable "Exponent"[#1]
+increment.ads:4:03: info: data dependencies proved[#0]
+increment.ads:5:03: info: flow dependencies proved[#1]
+side_effects.ads:7:13: function with output global "Call_Count" is not allowed in SPARK[#0]
+spkmain_studio_01.adb:18:04: warning: initialization of "result1" has no effect[#0]
+spkmain_studio_01.adb:21:04: warning: initialization of "result2" has no effect[#1]
+spkmain_studio_01.adb:24:04: info: initialization of "result3" proved[#2]
+gnatprove: error during analysis of data and information flow
+[2021-02-18 11:53:12] process exited with status 1, 100% (5/5), elapsed time: 01.41s
+
+gnatprove -P/home/wruslan/github/spark-studio-01/spark_studio_01.gpr -j0 --mode=flow --ide-progress-bar --limit-subp=pkg_math_functions.adb:20
+Phase 1 of 2: generation of Global contracts ...
+Phase 2 of 2: analysis of data and information flow ...
+Summary logged in /home/wruslan/github/spark-studio-01/obj/gnatprove/gnatprove.out
+[2021-02-18 11:55:48] process terminated successfully, elapsed time: 01.23s
+
+gnatprove -P/home/wruslan/github/spark-studio-01/spark_studio_01.gpr -j0 --mode=flow --ide-progress-bar --report=all
+Phase 1 of 2: generation of Global contracts ...
+Phase 2 of 2: analysis of data and information flow ...
+spkmain_studio_01.adb:18:04: warning: initialization of "result1" has no effect[#0]
+spkmain_studio_01.adb:21:04: warning: initialization of "result2" has no effect[#1]
+spkmain_studio_01.adb:24:04: info: initialization of "result3" proved[#2]
+increment.ads:4:03: info: data dependencies proved[#0]
+increment.ads:5:03: info: flow dependencies proved[#1]
+side_effects.ads:7:13: function with output global "Call_Count" is not allowed in SPARK[#0]
+gnatprove: error during analysis of data and information flow
+[2021-02-18 11:59:00] process exited with status 1, 100% (5/5), elapsed time: 01.40s
+
+gnatprove -P/home/wruslan/github/spark-studio-01/spark_studio_01.gpr -j0 --mode=flow --ide-progress-bar -U --report=all
+Phase 1 of 2: generation of Global contracts ...
+Phase 2 of 2: analysis of data and information flow ...
+increment.ads:4:03: info: data dependencies proved[#0]
+increment.ads:5:03: info: flow dependencies proved[#1]
+side_effects.ads:7:13: function with output global "Call_Count" is not allowed in SPARK[#0]
+spkmain_studio_01.adb:18:04: info: initialization of "result1" proved[#1]
+spkmain_studio_01.adb:21:04: info: initialization of "result2" proved[#0]
+spkmain_studio_01.adb:24:04: info: initialization of "result3" proved[#2]
+gnatprove: error during analysis of data and information flow
+[2021-02-18 12:02:16] process exited with status 1, 100% (5/5), elapsed time: 01.40s
+
+===========================================================
+gnatprove -P/home/wruslan/github/spark-studio-01/spark_studio_01.gpr -j0 --mode=flow --ide-progress-bar -U --report=all
+Phase 1 of 2: generation of Global contracts ...
+Phase 2 of 2: analysis of data and information flow ...
+increment.ads:4:03: info: data dependencies proved[#0]
+increment.ads:5:03: info: flow dependencies proved[#1]
+spkmain_studio_01.adb:18:04: info: initialization of "result1" proved[#1]
+spkmain_studio_01.adb:21:04: info: initialization of "result2" proved[#0]
+spkmain_studio_01.adb:24:04: info: initialization of "result3" proved[#2]
+Summary logged in /home/wruslan/github/spark-studio-01/obj/gnatprove/gnatprove.out
+[2021-02-18 12:03:55] process terminated successfully, elapsed time: 01.36s
+
+===========================================================
+Summary of SPARK analysis
+=========================
+
+-------------------------------------------------------------------------------------------
+SPARK Analysis results        Total        Flow   CodePeer   Provers   Justified   Unproved
+-------------------------------------------------------------------------------------------
+Data Dependencies                 1           1          .         .           .          .
+Flow Dependencies                 1           1          .         .           .          .
+Initialization                    3           3          .         .           .          .
+Non-Aliasing                      .           .          .         .           .          .
+Run-time Checks                   .           .          .         .           .          .
+Assertions                        .           .          .         .           .          .
+Functional Contracts              .           .          .         .           .          .
+LSP Verification                  .           .          .         .           .          .
+Termination                       .           .          .         .           .          .
+Concurrency                       .           .          .         .           .          .
+-------------------------------------------------------------------------------------------
+Total                             5    5 (100%)          .         .           .          .
+
+
+max steps used for successful proof: 0
+
+Analyzed 5 units
+in unit increment, 1 subprograms and packages out of 1 analyzed
+  Increment at increment.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings)
+in unit pkg_ada_dtstamp, 0 subprograms and packages out of 12 analyzed
+  pkg_ada_dtstamp.GetTime at pkg_ada_dtstamp.adb:59 skipped
+  pkg_ada_dtstamp.RTdelay_msec at pkg_ada_dtstamp.ads:19 skipped
+  pkg_ada_dtstamp.RTdelay_nsec at pkg_ada_dtstamp.ads:21 skipped
+  pkg_ada_dtstamp.RTdelay_sec at pkg_ada_dtstamp.ads:18 skipped
+  pkg_ada_dtstamp.RTdelay_usec at pkg_ada_dtstamp.ads:20 skipped
+  pkg_ada_dtstamp.dtstamp at pkg_ada_dtstamp.ads:14 skipped
+  pkg_ada_dtstamp.get_datestamp at pkg_ada_dtstamp.ads:15 skipped
+  pkg_ada_dtstamp.get_timestamp at pkg_ada_dtstamp.ads:16 skipped
+  pkg_ada_dtstamp.looptest10_RTdelay_msec at pkg_ada_dtstamp.ads:24 skipped
+  pkg_ada_dtstamp.looptest10_RTdelay_nsec at pkg_ada_dtstamp.ads:26 skipped
+  pkg_ada_dtstamp.looptest10_RTdelay_sec at pkg_ada_dtstamp.ads:23 skipped
+  pkg_ada_dtstamp.looptest10_RTdelay_usec at pkg_ada_dtstamp.ads:25 skipped
+in unit pkg_math_functions, 4 subprograms and packages out of 4 analyzed
+  pkg_math_functions at pkg_math_functions.ads:3 flow analyzed (0 errors, 0 checks and 0 warnings)
+  pkg_math_functions.Exp at pkg_math_functions.ads:10 flow analyzed (0 errors, 0 checks and 0 warnings)
+  pkg_math_functions.Find at pkg_math_functions.ads:12 flow analyzed (0 errors, 0 checks and 0 warnings)
+  pkg_math_functions.Sqrt at pkg_math_functions.ads:9 flow analyzed (0 errors, 0 checks and 0 warnings)
+in unit side_effects, 3 subprograms and packages out of 3 analyzed
+  Side_Effects at side_effects.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings)
+  Side_Effects.Incr at side_effects.ads:5 flow analyzed (0 errors, 0 checks and 0 warnings)
+  Side_Effects.Incr_And_Log at side_effects.ads:7 flow analyzed (0 errors, 0 checks and 0 warnings)
+in unit spkmain_studio_01, 1 subprograms and packages out of 1 analyzed
+  spkmain_studio_01 at spkmain_studio_01.adb:9 flow analyzed (0 errors, 0 checks and 0 warnings)
+  
+===========================================================
+gnatprove -P/home/wruslan/github/spark-studio-01/spark_studio_01.gpr -j0 --level=0 --ide-progress-bar -U --report=all --mode=check_all
+Phase 1 of 2: generation of Global contracts ...
+Phase 2 of 2: full checking of SPARK legality rules ...
+Summary logged in /home/wruslan/github/spark-studio-01/obj/gnatprove/gnatprove.out
+[2021-02-18 12:08:52] process terminated successfully, elapsed time: 01.35s
+
+===========================================================
+spkmain_studio_01.adb:18:4: info: initialization of "result1" proved
+spkmain_studio_01.adb:21:4: info: initialization of "result2" proved
+spkmain_studio_01.adb:24:4: info: initialization of "result3" proved
+spkmain_studio_01.adb:32:31: info: range check proved
+spkmain_studio_01.adb:35:31: info: range check proved
+spkmain_studio_01.adb:38:31: info: range check proved
+increment.adb:5:10: info: overflow check proved
+increment.ads:4:3: info: data dependencies proved
+increment.ads:5:3: info: flow dependencies proved
+increment.ads:7:14: info: postcondition proved
+increment.ads:7:24: info: overflow check proved
+side_effects.adb:6:10: medium: overflow check might fail
+side_effects.adb:13:16: medium: overflow check might fail
+pkg_math_functions.adb:12:27: info: float overflow check proved
+pkg_math_functions.adb:12:27: info: division check proved
+pkg_math_functions.adb:25:20: medium: float overflow check might fail
+pkg_math_functions.adb:33:24: info: range check proved
+pkg_math_functions.ads:14:16: info: postcondition proved
+  
+===========================================================
+Summary of SPARK analysis
+===========================================================
+
+-------------------------------------------------------------------------------------------------------------
+SPARK Analysis results        Total       Flow   CodePeer                      Provers   Justified   Unproved
+-------------------------------------------------------------------------------------------------------------
+Data Dependencies                 1          1          .                            .           .          .
+Flow Dependencies                 1          1          .                            .           .          .
+Initialization                    3          3          .                            .           .          .
+Non-Aliasing                      .          .          .                            .           .          .
+Run-time Checks                  11          .          .    8 (CVC4 88%, Trivial 13%)           .          3
+Assertions                        .          .          .                            .           .          .
+Functional Contracts              2          .          .                     2 (CVC4)           .          .
+LSP Verification                  .          .          .                            .           .          .
+Termination                       .          .          .                            .           .          .
+Concurrency                       .          .          .                            .           .          .
+-------------------------------------------------------------------------------------------------------------
+Total                            18    5 (28%)          .                     10 (56%)           .    3 (17%)
+
+
+max steps used for successful proof: 1
+
+Analyzed 5 units
+in unit increment, 1 subprograms and packages out of 1 analyzed
+  Increment at increment.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (3 checks)
+in unit pkg_ada_dtstamp, 0 subprograms and packages out of 12 analyzed
+  pkg_ada_dtstamp.GetTime at pkg_ada_dtstamp.adb:59 skipped
+  pkg_ada_dtstamp.RTdelay_msec at pkg_ada_dtstamp.ads:19 skipped
+  pkg_ada_dtstamp.RTdelay_nsec at pkg_ada_dtstamp.ads:21 skipped
+  pkg_ada_dtstamp.RTdelay_sec at pkg_ada_dtstamp.ads:18 skipped
+  pkg_ada_dtstamp.RTdelay_usec at pkg_ada_dtstamp.ads:20 skipped
+  pkg_ada_dtstamp.dtstamp at pkg_ada_dtstamp.ads:14 skipped
+  pkg_ada_dtstamp.get_datestamp at pkg_ada_dtstamp.ads:15 skipped
+  pkg_ada_dtstamp.get_timestamp at pkg_ada_dtstamp.ads:16 skipped
+  pkg_ada_dtstamp.looptest10_RTdelay_msec at pkg_ada_dtstamp.ads:24 skipped
+  pkg_ada_dtstamp.looptest10_RTdelay_nsec at pkg_ada_dtstamp.ads:26 skipped
+  pkg_ada_dtstamp.looptest10_RTdelay_sec at pkg_ada_dtstamp.ads:23 skipped
+  pkg_ada_dtstamp.looptest10_RTdelay_usec at pkg_ada_dtstamp.ads:25 skipped
+in unit pkg_math_functions, 4 subprograms and packages out of 4 analyzed
+  pkg_math_functions at pkg_math_functions.ads:3 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  pkg_math_functions.Exp at pkg_math_functions.ads:10 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 0 checks out of 1 proved
+  pkg_math_functions.Find at pkg_math_functions.ads:12 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (2 checks)
+  pkg_math_functions.Sqrt at pkg_math_functions.ads:9 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (2 checks)
+in unit side_effects, 3 subprograms and packages out of 3 analyzed
+  Side_Effects at side_effects.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Side_Effects.Incr at side_effects.ads:5 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 0 checks out of 1 proved
+  Side_Effects.Incr_And_Log at side_effects.ads:7 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 0 checks out of 1 proved
+in unit spkmain_studio_01, 1 subprograms and packages out of 1 analyzed
+  spkmain_studio_01 at spkmain_studio_01.adb:9 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (3 checks)
+
+===========================================================
+ALHAMDULILLAH 3 TIMES.
+===========================================================
+
+
+

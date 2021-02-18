@@ -1,0 +1,100 @@
+{
+  "spark": [
+    {
+      "name": "spkmain_studio_01",
+      "sloc": [
+        {
+          "file": "spkmain_studio_01.adb",
+          "line": 9
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "pkg_ada_dtstamp.dtstamp",
+            "sloc": [
+              {
+                "file": "pkg_ada_dtstamp.ads",
+                "line": 14
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "pkg_math_functions.Exp",
+            "sloc": [
+              {
+                "file": "pkg_math_functions.ads",
+                "line": 10
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "pkg_math_functions.Find",
+            "sloc": [
+              {
+                "file": "pkg_math_functions.ads",
+                "line": 12
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "pkg_math_functions.Sqrt",
+            "sloc": [
+              {
+                "file": "pkg_math_functions.ads",
+                "line": 9
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "spkmain_studio_01",
+          "sloc": [
+            {
+              "file": "spkmain_studio_01.adb",
+              "line": 9
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "globals/properties (advanced)": 1.92300006747246E-02,
+    "flow analysis": 2.00699991546571E-03,
+    "marking": 2.15019993484020E-02,
+    "globals (basic)": 1.18680000305176E-02
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "spark": [
+    {
+      "name": "pkg_math_functions.Exp",
+      "sloc": [
+        {
+          "file": "pkg_math_functions.ads",
+          "line": 10
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "pkg_math_functions.Exp",
+          "sloc": [
+            {
+              "file": "pkg_math_functions.ads",
+              "line": 10
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "globals/properties (advanced)": 3.76999989384785E-04,
+    "flow analysis": 6.00000028498471E-04,
+    "marking": 2.87000002572313E-04,
+    "globals (basic)": 2.32000005780719E-04
+  }
+}
